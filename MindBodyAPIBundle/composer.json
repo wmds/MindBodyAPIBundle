@@ -1,0 +1,25 @@
+{
+    "name": "wmds/mindbody-api-bundle",
+    "type": "symfony-bundle",
+    "description": "Integrates MindBodyOnline.com API with Symfony 2",
+    "keywords": ["symfony", "bundle", "mindbody", "mind body", "mindbodyonline.com"],
+    "homepage": "https://github.com/wmds/MindBodyAPIBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WMD Solution SRL",
+            "email": "office@wmds.ro"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "require-dev": {
+        "symfony/framework-bundle": ">=2.1,<2.3-dev"
+    },
+    "autoload": {
+        "psr-0": { "Wmds\\MindBodyAPIBundle": "" }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Wmds/MindBodyAPIBundle"
+}
