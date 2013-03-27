@@ -1,4 +1,4 @@
 MindBodyAPIBundle
 =================
 
-Integrates MindBody.com API with Symfony 2
+Integrates MindBodyOnline.com API with Symfony 2
