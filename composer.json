@@ -1,5 +1,5 @@
 {
-    "name": "wmds/mindbody-api-bundle",
+    "name": "wmds/mindbodyonline-api-bundle",
     "type": "symfony-bundle",
     "description": "Integrates MindBodyOnline.com API with Symfony 2",
     "keywords": ["symfony", "bundle", "mindbody", "mind body", "mindbodyonline.com"],
