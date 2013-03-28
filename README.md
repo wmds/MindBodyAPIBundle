@@ -30,7 +30,7 @@ Add config data to your app/config/config.yml file :
         debug:    false                             # (Optional) default: false
         xml: 'Full'                                 # (Optional) default: Full, possible: Bare, Basic, Full
 
-**1. How to use it**
+**2. How to use it**
 
 This bundle is a service, to use it:
 
