@@ -3,4 +3,5 @@ MindBodyAPIBundle
 
 Integrates MindBodyOnline.com API with Symfony 2
 
-!!! This project is currently in development !!!
+**1. Installing the bundle**
+    php composer.phar require wmds/mindbodyonline-api-bundle dev-master
