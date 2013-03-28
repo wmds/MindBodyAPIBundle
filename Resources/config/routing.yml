@@ -1,3 +1,0 @@
-wmds_mind_body_api_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: WmdsMindBodyAPIBundle:Default:index }

@@ -1,7 +1,7 @@
 parameters:
-#    wmds_mind_body_api.example.class: Wmds\MindBodyAPIBundle\Example
+    wmds_mind_body_api.class: Wmds\MindBodyAPIBundle\MindbodyOnlineAPI\MindbodyOnlineAPI
 
 services:
-#    wmds_mind_body_api.example:
-#        class: %wmds_mind_body_api.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    wmds_mind_body_api:
+        class: %wmds_mind_body_api.class%
+        arguments: [@service_container]
