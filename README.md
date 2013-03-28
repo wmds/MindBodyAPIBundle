@@ -29,3 +29,28 @@ Add config data to your app/config/config.yml file :
         sandbox:  true                              # (Optional) default: true
         debug:    false                             # (Optional) default: false
         xml: 'Full'                                 # (Optional) default: Full, possible: Bare, Basic, Full
+
+**1. How to use it**
+
+This bundle is a service, to use it:
+
+    // Anywhere in your controller
+    $mbapi = $this->get('wmds_mind_body_api');
+
+MindBodyOnline.com has a list of available services that you can check on http://api.mindbodyonline.com/Doc
+To use an API service:
+
+    // Get the SaleService
+    $sale = $mbapi->getService('sale');
+
+    //Get the AppointmentService
+    $appointment = $mbapi->getService('AppoinTment'); // string passed is case insensitive
+
+this will automatically set the $sale object, initiate the SOAP object and passes the wsdl url.
+
+To make a request, call the setParam() function to add all the parameters that you need and then execute():
+
+    $products =  $sale->setAction('GetProducts')
+                    ->setParam('SellOnline',true)
+                    ->execute();
+
