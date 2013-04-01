@@ -43,6 +43,17 @@ class MindbodyOnlineAPI {
      */
     private $userCredentials;
 
+    public function setUser()
+    {
+        $this->userCredentials = new UserCredentials();
+        return $this->userCredentials;
+    }
+
+    public function getUser()
+    {
+        return $this->userCredentials;
+    }
+
     /**
      * @param $service
      * @return Services
