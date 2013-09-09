@@ -16,7 +16,7 @@ use Wmds\MindBodyAPIBundle\MindbodyOnlineAPI\Services\Services;
 
 class MindbodyOnlineAPI {
 
-    const SOAP_URL = "http://clients.mindbodyonline.com/api/0_5/";
+    const SOAP_URL = "https://api.mindbodyonline.com/0_5/";
 
     /**
      * @var ContainerInterface
