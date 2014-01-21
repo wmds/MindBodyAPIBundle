@@ -64,7 +64,7 @@ class Services {
     public function __construct($soapURL, $service, $developerCredentials, $userCredentials, $debug, $XMLDetail) {
         $this->debug        = $debug;
         $this->soapClient   = new \SoapClient($soapURL.$this->getServiceWsdl($service), array('trace' => $this->debug));
-
+        $this->soapClient->__setLocation(str_replace("?wsdl","",$soapURL.$this->getServiceWsdl($service)));
         $this->apiData      = array(
             'SourceCredentials' => $developerCredentials,
             'XMLDetail'         => $XMLDetail
